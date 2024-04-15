@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.caixa-principal {
+    height: 100vh;
+    width: 100%;
+    background-position: right;
+    background-color: #191919;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+.portfolio {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 500px;
+
+}
+
+.portfolio span {
+    color: #FA91A3;
+}
+
+li {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+li:hover {
+    color:#FA91A3
+}
+
+ul {
+    display: inline-block;
+    transition: 0.5;
+}
+
+.meu-nome {
+    position: absolute;
+    top:50%;
+    left: 7%
+
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+}
+
+h1 span {
+    color: #FA91A3;
+}
+
+.meu-nome h3{
+    color: white;
+
+}
