@@ -72,3 +72,128 @@ h1 span {
     color: white;
 
 }
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 60px 15%;
+    background-color: #000000;
+}
+
+section img {
+
+    height: 300px;
+    border-radius: 1000px;
+    border: 2.5px solid #FA91A3;
+    margin-right: 30px;
+
+}
+
+section div h2 {
+    color: white;
+    font-size: 50px;
+}
+
+section p {
+    color: #f7aab7;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+section div button {
+    color: white;
+    background-color: #f7aab7;
+    font-size: 18px;
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+section div button:hover {
+    background-color: #000000;
+    border: 3px solid #FA91A3;
+}
+
+.projetos {
+    background-color: #191919;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+
+.projetos h2 {
+    color: white;
+    height: 75px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.card {
+    background-color: #000000;
+    height: 360px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+}
+
+.card img {
+    height: 80px;
+}
+
+.card h5 {
+    color: white;
+    font-size: 24px;
+}
+
+.card p {
+    color: #f7aab7;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.card a {
+    background-color: #FA91A3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid #FA91A3
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h5 {
+    color: white;
+    font-size: 30px;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+
+}
+
+.social img {
+    height: 30px;
+
+}
+
+.social a {
+    background-color: #f7aab7;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
