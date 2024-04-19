@@ -1,178 +1,187 @@
-@charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
 }
 
-.caixa-principal {
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family:"Poppins", sans-serif;
+}
+
+#person {
     height: 100vh;
     width: 100%;
-    background-position: right;
-    background-color: #191919;
-}
 
-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
-}
 
-.portfolio {
-    color: #ffffff;
-    font-size: 35px;
-    font-weight: 500px;
-
-}
-
-.portfolio span {
-    color: #FA91A3;
-}
-
-li {
-    color: white;
-    list-style: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-right: 30px;
-    cursor: pointer;
-}
-
-li:hover {
-    color:#FA91A3
-}
-
-ul {
-    display: inline-block;
-    transition: 0.5;
-}
-
-.meu-nome {
-    position: absolute;
-    top:50%;
-    left: 7%
-
-}
-
-h1 {
-    color: white;
-    font-size: 75px;
-}
-
-h1 span {
-    color: #FA91A3;
-}
-
-.meu-nome h3{
-    color: white;
-
-}
-
-section {
-    display: flex;
-    align-items: center;
-    padding: 60px 15%;
-    background-color: #000000;
-}
-
-section img {
-
-    height: 300px;
-    border-radius: 1000px;
-    border: 2.5px solid #FA91A3;
-    margin-right: 30px;
-
-}
-
-section div h2 {
-    color: white;
-    font-size: 50px;
-}
-
-section p {
-    color: #f7aab7;
-    font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 60px;
-}
-
-section div button {
-    color: white;
-    background-color: #f7aab7;
-    font-size: 18px;
-    height: 50px;
-    width: 180px;
-    border: none;
-    border-radius: 26px;
-    cursor: pointer;
-}
-
-section div button:hover {
-    background-color: #000000;
-    border: 3px solid #FA91A3;
-}
-
-.projetos {
-    background-color: #191919;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    background-color: black;
     
 }
 
-.projetos h2 {
-    color: white;
-    height: 75px;
-    font-size: 50px;
-    text-align: center;
-}
-
-.card {
-    background-color: #000000;
-    height: 360px;
-    width: 335px;
-    border-radius: 20px;
-    padding: 20px 35px;
-    text-align: center;
-}
-
-.card img {
-    height: 80px;
-}
-
-.card h5 {
-    color: white;
-    font-size: 24px;
-}
-
-.card p {
-    color: #f7aab7;
-    margin-top: 20px;
-    margin-bottom: 40px;
-
-}
-
-.card a {
-    background-color: #FA91A3;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.card a:hover {
-    background-color: transparent;
-    border: 2px solid #FA91A3
-}
-
-.card-projetos {
+.person-content {
+    
+    height: 100%;
+    width: 50%;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;   
+
+    background-color: #000000;
+}
+
+.person-content div h1 {
+    padding: 0px 4px;
+    color: transparent;
+
+    position: relative;
+    width: fit-content;
+
+    font-size: 4.5rem;
+    line-height: 6rem;
+    animation: written_tex .5s ease forwards;
+}
+
+
+.person-content div h1:nth-child(1) {
+    animation-delay: 1s;
+    position: relative;
+    
+}
+
+.person-content div h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+.person-content div h1:nth-child(3){
+    animation: written_tex_name .5s ease forwards;
+    animation-delay: 3s;
+}
+
+.person-content div h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0px;
+    height: 100%;
+
+    background-color: #B66476;
+    animation: written_tex_box 1s ease;
+    animation-delay: .5s;
+}
+
+.person-content div h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+.person-content div h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+.person-content div h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+.person-name {
+    margin-top: 11rem;
+}
+
+.stacks-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.stacks-content h3 {
+    color: white;
+    font-size: 1.15rem;
+
+    margin-left: 20px;
+}
+
+.stacks {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.stacks ul li {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    margin: 10px;
+    padding: 0.5px;
+    list-style: none;
+}
+
+.stacks ul li img{
+    width: 30px;
+    height: auto;
+
+    transition: transform .3s ease;
+}
+
+.stacks ul li div img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.stacks ul li div:hover::after{
+    content: attr(data);
+    position: absolute;
+    top: 50px;
+    left: 10px;
+
+    width: 20px;
+    height: 20px;
+
+    color: white;
+}
+
+@keyframes written_tex {
+    100% {
+        color: white;
+    }
+}
+
+@keyframes written_tex_name {
+    100% {
+        color: #E07C91;
+    }
+}
+
+@keyframes written_tex_box {
+    50% {
+        width: 100%;
+        left:0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+footer {
+    background-color: #000000;
+    padding-top: 100px;
+    padding-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer h5 {
@@ -182,18 +191,39 @@ footer h5 {
 
 footer p {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 14px;
 
+}
+
+.nome {
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 20px
 }
 
 .social img {
     height: 30px;
+    border-radius: 100%;
 
 }
 
 .social a {
-    background-color: #f7aab7;
-    height: 100px;
-    width: 100px;
+    background-color: white;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    transition: 0.5;
 }
