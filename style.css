@@ -21,22 +21,20 @@ body {
     display: flex;
     align-items: center;
 
-    background-color: black;
+    background-color: #000000
     
 }
 
 .person-content {
-    
     height: 100%;
     width: 50%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    flex-direction: column;   
-
-    background-color: #000000;
+    flex-direction: column;
+    background-color: black
 }
 
 .person-content div h1 {
@@ -48,35 +46,33 @@ body {
 
     font-size: 4.5rem;
     line-height: 6rem;
-    animation: written_tex .5s ease forwards;
-}
 
+    animation: written_text .5s ease forwards;
+
+}
 
 .person-content div h1:nth-child(1) {
     animation-delay: 1s;
-    position: relative;
-    
 }
 
-.person-content div h1:nth-child(2){
+.person-content div h1:nth-child(2) {
     animation-delay: 2s;
 }
 
-.person-content div h1:nth-child(3){
-    animation: written_tex_name .5s ease forwards;
+.person-content div h1:nth-child(3) {
+    animation: written_text_name .5s ease forwards;
     animation-delay: 3s;
 }
 
-.person-content div h1 span{
+.person-content div h1 span {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 0px;
     height: 100%;
-
     background-color: #B66476;
-    animation: written_tex_box 1s ease;
+
+    animation: written_text_box 1s ease;
     animation-delay: .5s;
 }
 
@@ -99,6 +95,7 @@ body {
 .stacks-content {
     display: flex;
     justify-content: center;
+
     flex-direction: column;
     margin-top: 6rem;
 }
@@ -110,9 +107,12 @@ body {
     margin-left: 20px;
 }
 
+
 .stacks {
     display: flex;
+
     align-items: center;
+
     flex-direction: row;
 }
 
@@ -123,18 +123,25 @@ body {
     position: relative;
 
     margin: 10px;
-    padding: 0.5px;
+    padding: 10px;
+
     list-style: none;
 }
 
-.stacks ul li img{
+.stacks img {
+    width: 30px;
+    height: 30px;
+}
+
+.stacks ul li img {
     width: 30px;
     height: auto;
 
-    transition: transform .3s ease;
+    transition: transform .5s ease;
+
 }
 
-.stacks ul li div img:hover {
+.stacks ul  li div img:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -151,79 +158,100 @@ body {
     color: white;
 }
 
-@keyframes written_tex {
+.person-background {
+    height: 100vh;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    flex-direction: column;
+
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-position: top center;
+
+    z-index: 1;
+}
+
+.person-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: .7;
+    z-index: -1;
+
+    background:
+    linear-gradient(90deg, transparent 30%, #000000),
+    linear-gradient(180deg, transparent 30%, #000000),
+    linear-gradient(0deg, transparent 65%, #000000);
+}
+
+.wrapper-profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px;
+    margin: 20px 15px;
+    border-radius: 50%;
+    background:
+        radial-gradient(black 60%, transparent 0),
+        radial-gradient(#000000 68%, transparent 0),
+        linear-gradient(to top right, #ffa500 0%, #ff1493 100%);  
+}
+
+.profile-photo {
+    height: 300px;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.links a img {
+    width: 30px;
+    height: 30px;
+
+    margin: 5px;
+    filter: brightness(.8);
+    transition: all .3s ease;
+}
+
+.links a img:hover{
+    filter: brightness(1);
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+@keyframes written_text {
     100% {
         color: white;
     }
 }
 
-@keyframes written_tex_name {
+@keyframes written_text_name {
     100% {
         color: #E07C91;
     }
 }
 
-@keyframes written_tex_box {
+@keyframes written_text_box {
     50% {
         width: 100%;
-        left:0;
+        left: 0;
     }
     100% {
         width: 0;
         left: 100%;
     }
-}
-
-footer {
-    background-color: #000000;
-    padding-top: 100px;
-    padding-bottom: 125px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer h5 {
-    color: white;
-    font-size: 30px;
-}
-
-footer p {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 30px;
-    margin-top: 14px;
-
-}
-
-.nome {
-    margin-bottom: 10px;
-}
-
-.social {
-    display: flex;
-    gap: 20px
-}
-
-.social img {
-    height: 30px;
-    border-radius: 100%;
-
-}
-
-.social a {
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-
-.social a:hover {
-    transform: scale(1.2);
-    transition: 0.5;
 }
