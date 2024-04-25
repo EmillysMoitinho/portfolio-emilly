@@ -6,11 +6,29 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
+
     <title>Emilly Soares Moitinho</title>
 </head>
 
 <body>
+    <section id="header">
+        <a class="header-title" href="/">
+            <h1>Emilly Moitinho</h1>
+        </a>
+
+        <nav class="navbar">  
+            <ul>
+                <li><a href="#person">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+            </ul>
+        </nav>
+    </section>
+
     <section id="person">
         <div class="person-content">
             <div class="person-name">
@@ -72,12 +90,13 @@
                     <p>HTML e CSS</p>
                 </h3>
 
-                <h4>Meu nome é Emilly, tenho 18 anos. No momento estou atuando com estágiaria na Academy One da minha faculdade, onde desenvolvo diversos projetos reais em equipe,  habilidades técnicas e troca de experiências entre alunos de diferentes níveis de ensino. Além disso, vivencio treinamentos e experiências profissionais.</h4>
+                <h4>Meu nome é Emilly, tenho 18 anos. No momento estou atuando com estágiaria na Academy One da minha faculdade, onde desenvolvo diversos projetos reais em equipe,  habilidades técnicas e troca de experiências entre alunos de diferentes níveis de ensino. Além disso, vivencio treinamentos e experiências profissionais.     
+                </h4>
 
-                <h4>Abaixo está o meu <a href="docs/Currículo - Emilly Soares Moitinho.pdf" download="Currículo - Emilly Soares Moitinho.pdf">currículo</a> para download.</h4>
+                <h4>Abaixo está o meu currículo para download.</h4>
 
                 <div class="button-cta">
-                    <button>Currículo</button>
+                    <a href="public/document/Currículo - Emilly Soares Moitinho.pdf" download="CV-Emilly-Moitinho" aria-label="Baixar currículo Emilly Moitinho">Currículo</a>
                 </div>
             </div>
         </div>
@@ -85,92 +104,143 @@
 
     <section id="projects">
         <div class="projects-title">
-            <h2>PROJETOS 🧩</h2>
+            <h2>PROJETOS</h2>
         </div>
-        <div class="wrapper-projects">
-
-            <div class="card-project">
-                <div class="content-projects">
-                    <div class="image-project">
-                        <a href="/">
-                            <img src="svg/em-breve.svg">
-                        </a>
-                    </div>
-
-                    <span>Nome do projeto</span>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente iste corporis distinctio dolores recusandae maiores explicabo facilis.</p>
-
-                    <div class="cta-project">
-                        <a href="">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
+        
+        <div class="container-projects">
+            <div class="swiper mySwiper">
+              <!-- wrapper-projects -->
+      
+              <div class="swiper-wrapper">
+      
+                <!-- content-project -->
+                <div class="swiper-slide card-project">
+                  <div class="image-project">
+                    <a href="/">
+                      <img src="svg/em-breve.svg" alt="img-breve">
+                    </a>
+                  </div>
+      
+                  <span>Nome do Projeto</span>
+      
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi atque amet unde magnam magni! Aperiam magnam corporis quos dolores. Mollitia repudiandae soluta sint optio unde temporibus voluptatibus maiores suscipit deserunt?</p>
+      
+                  <div class="cta-project">
+                    <a href="/">
+                      Código
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="/">
+                      Site
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
                 </div>
-            </div>
-
-            <div class="card-project">
-                <div class="content-projects">
-                    <div class="image-project">
-                        <a href="/">
-                            <img src="svg/em-breve.svg">
-                        </a>
-                    </div>
-
-                    <span>Nome do projeto</span>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente iste corporis distinctio dolores recusandae maiores explicabo facilis.</p>
-
-                    <div class="cta-project">
-                        <a href="">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
+                <div class="swiper-slide card-project">
+                  <div class="image-project">
+                    <a href="/">
+                      <img src="svg/em-breve.svg" alt="img-conversor">
+                    </a>
+                  </div>
+      
+                  <span>Nome do Projeto</span>
+      
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus exercitationem dolorum laborum autem. Corrupti quibusdam rem cupiditate nobis quia, ipsum molestiae blanditiis omnis molestias distinctio. Alias quidem iste animi illo?</p>
+      
+                  <div class="cta-project">
+                    <a href="/">
+                      Código
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="/">
+                      Site
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
                 </div>
-            </div>
-
-            <div class="card-project">
-                <div class="content-projects">
-                    <div class="image-project">
-                        <a href="/"><img src="svg/em-breve.svg"></a>
-                    </div>
-
-                    <span>Nome do projeto</span>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente iste corporis distinctio dolores recusandae maiores explicabo facilis.</p>
-
-                    <div class="cta-project">
-                        <a href="">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
+                <div class="swiper-slide card-project">
+                  <div class="image-project">
+                    <a href="/">
+                      <img src="svg/em-breve.svg" alt="img-conversor">
+                    </a>
+                  </div>
+      
+                  <span>Nome do Projeto</span>
+      
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit explicabo iusto incidunt fugiat officia amet. Itaque minima in quas tempora quo cum molestiae, molestias deserunt consectetur ab earum voluptas!</p>
+      
+                  <div class="cta-project">
+                    <a href="/">
+                      Código
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="/">
+                      Site
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
                 </div>
+                <div class="swiper-slide card-project">
+                  <div class="image-project">
+                    <a href="/">
+                      <img src="svg/em-breve.svg" alt="img-conversor">
+                    </a>
+                  </div>
+      
+                  <span>Nome do Projeto</span>
+      
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam totam doloremque suscipit tempore neque accusantium maxime ducimus mollitia voluptatem nesciunt temporibus aliquam quo, ab deserunt incidunt fuga aut sunt soluta!</p>
+      
+                  <div class="cta-project">
+                    <a href="/">
+                      Código
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="/">
+                      Site
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card-project">
+                  <div class="image-project">
+                    <a href="/">
+                      <img src="svg/em-breve.svg" alt="img-conversor">
+                    </a>
+                  </div>
+      
+                  <span>Nome do Projeto</span>
+      
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, at blanditiis facilis, voluptatibus aliquam tempora quaerat nulla obcaecati, et soluta illo. Magni similique distinctio, modi molestias ipsum repellendus alias cum.</p>
+      
+                  <div class="cta-project">
+                    <a href="/">
+                      Código
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="/">
+                      Site
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+      
+              </div>
+      
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+      
+      
+      
             </div>
-            
-        </div>
+          </div>
+      
         
     </section>
 
     <section id="contacts">
-        <div class="contatc-icon-content">
+        <div class="contact-icon-content">
             <h2>Contato 📞</h2>
         </div>
 
@@ -190,7 +260,7 @@
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="contact-info">
-                    <span>Email</span>
+                    <span>Email </span>
                     <a href="/">
                         emillysmoitinho@gmail.com
                     </a>
@@ -200,5 +270,15 @@
         </div>
     </section>
 
+    <section id="footer">
+        <div class="container-footer">
+            <h2>Feito com ❤️ por</h2>
+            <h3>Emilly Moitinho ©️ 2024</h3>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="scripts.js"></script>
     </body>
 </html>
