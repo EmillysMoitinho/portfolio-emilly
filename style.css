@@ -131,9 +131,6 @@ body {
     background: #FFFFFF;
   }
 
-
-  /* ATIVO */
-
   .navbar.active .navbar-links {
     clip-path: circle(1400px at 90% -18%);
     pointer-events: all;
@@ -174,14 +171,6 @@ body {
     font-size: calc(1vw + .3rem);
   }
 }
-
-
-
-
-
-
-
-
 
 #person {
   height: 100vh;
@@ -324,7 +313,6 @@ body {
   font-size: 1.25vh;
 }
 
-/* sm */
 @media (max-width: 376px) {
   .person-name {
     padding: 0px 10px;
@@ -352,7 +340,6 @@ body {
 }
 
 
-/* sm -> md */
 @media (min-width: 377px) and (max-width: 768px) {
   .person-name {
     padding: 0px 10px;
@@ -482,7 +469,6 @@ body {
   }
 }
 
-/* Final da primeira página */
 
 #about {
   height: auto;
@@ -617,7 +603,6 @@ body {
   filter: brightness(.8);
 }
 
-/* sm */
 @media (max-width: 375px) {
   .box-about {
     padding: 1rem
@@ -674,8 +659,6 @@ body {
 }
 
 
-/* Final da sobre */
-
 #projects {
   height: auto;
   width: 100%;
@@ -687,23 +670,12 @@ body {
 
 .projects-title h2 {
   margin-top: 60px;
-  padding: 1rem;
+  padding: 30px;
 
   font-size: 3rem;
   color: #FFFFFF;
 }
 
-/* .wrapper-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-direction: row;
-
-  height: 500px;
-
-  margin-top: 2rem;
-} */
 
 .container-projects {
   height: 100%;
@@ -731,14 +703,11 @@ body {
 }
 
 .card-project {
-  /* width: 320px; */
-  /* height: 450px; */
 
   height: 100%;
   width: 100%;
 
   padding: 30px 20px 20px;
-  /* margin: 0px 10px; */
 
   position: relative;
   background: #FFFFFF;
@@ -767,16 +736,6 @@ body {
 
   z-index: -1;
 }
-
-/* .content-project {
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-
-  z-index: 1;
-} */
 
 .image-project {
   max-height: 240px;
@@ -911,8 +870,6 @@ body {
     margin-right: 1vw;
   }
 }
-
-/* Final do projetc */
 
 #contacts {
   display: flex;
