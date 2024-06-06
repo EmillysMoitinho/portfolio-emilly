@@ -722,6 +722,11 @@ body {
 
 }
 
+
+span.name-green {
+  color: #64b66f;
+}
+
 .card-project::after {
   content: "";
   position: absolute;
@@ -754,13 +759,15 @@ body {
 }
 
 .image-project a img {
-  height: 100%;
+  height: 120%;
   width: 100%;
   object-fit: cover;
+  background-position: top;
   border-radius: 30px;
   position: absolute;
   top: 0;
   left: 0;
+  
 
   border: 2px solid #FFFFFF;
 
@@ -773,7 +780,7 @@ body {
 }
 
 .card-project span {
-  color: #000000;
+  color: #B66476;
   font-weight: bold;
   font-size: 1.7rem;
 
@@ -785,6 +792,7 @@ body {
   font-weight: bold;
   font-size: 1.1rem;
   margin: 0rem .75rem;
+  text-align: justify;
 }
 
 .cta-project {
@@ -801,7 +809,7 @@ body {
 
   font-size: 1.25rem;
   color: #FFFFFF;
-  background: #E07C91;
+  background: #B66476;
 
   border-radius: 10px;
 
